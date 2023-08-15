@@ -1,0 +1,44 @@
+
+.revenue__box,
+.order__box,
+.Courses__box,
+.users__box{
+    padding: 20px;
+    border-radius: 5px;
+    /* text-align: center; */
+}
+.revenue__box{
+    background: var(--card-bg-01);
+}
+
+.order__box{
+    background: var(--card-bg-03);
+}
+
+.Courses__box{
+    background: var(--card-bg-04);
+}
+
+.users__box{
+    background: var(--card-bg-02);
+}
+
+.revenue__box h5,
+.order__box h5,
+.Courses__box h5,
+.users__box h5{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--secondary-color);
+    margin-top: 20px;
+}
+
+.revenue__box span,
+.order__box span,
+.Courses__box span,
+.users__box span{
+    font-weight: 600;
+    font-size: 2rem;
+    
+}
+

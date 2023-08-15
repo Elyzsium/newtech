@@ -1,58 +1,62 @@
-import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
-import './App.css';
 
+import './App.scss';
+import Layout from './components/Layout';
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Counter />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <span>
-          <span>Learn </span>
-          <a
-            className="App-link"
-            href="https://reactjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux-toolkit.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux Toolkit
-          </a>
-          ,<span> and </span>
-          <a
-            className="App-link"
-            href="https://react-redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React Redux
-          </a>
-        </span>
-      </header>
-    </div>
-  );
-}
+  return <Layout/> 
+};
 
 export default App;
+
+
+// function App() {
+//   const [first, setFirst] = useState('')
+//   return (
+//    <>
+//    <BrowserRouter>
+//    <ToastContainer
+//       theme="dark"
+//       position="top-right"
+//       autoClose={3000}
+//       closeOnClick     
+//       pauseOnHover={false}      
+//     />
+//    <Routes>
+//     <Route path='/' element={<Layout/>}>
+//     <Route index element={<Home/>} />
+//     <Route path='/course' element={<Course/>} />
+    
+//     <Route path='/*' element= {<RequireAuth/>}>
+//       <Route path='checkout' element={<CheckOut/>}/>
+//       <Route path='dashboard' element={<Dashboard/>}/>
+//       <Route path='dashboard/all-courses' element={<AllCourses/>}/>
+//       <Route path='dashboard/add-courses' element={<AddCourses/>}/>
+//     </Route > 
+
+//     {/* <Route path='/checkout' element={<RequireAuth>
+//       <CheckOut/>
+//     </RequireAuth>}/> */}
+    
+//     <Route path='/cart' element={<Cart/>} />
+//     <Route path='/course/:id' element={<CourseDetails/>} />
+//     <Route path='/login' element={<Login/>} />
+//     <Route path='/register' element={<Register/>} />
+//     <Route path='/reset' element={<Reset/>} />
+//     <Route path='/contact' element={<Contact/>} />
+//     <Route path='dashboard/users' element={<Users/>}/>
+ 
+//     {/* <Route path='/work' element={<Work/>} /> */}
+
+//     </Route>
+//    </Routes>
+//    </BrowserRouter>
+//    </>
+//   );
+
+//   function RequireAuth() {
+//     const {currentUser} = useAuth();
+//     return currentUser ? <Outlet/> : <Navigate to= "/login" />;
+// };
+
+// }
+
+// export default App;
